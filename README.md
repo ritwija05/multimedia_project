@@ -1,16 +1,33 @@
-# Particles
-a particle emitter optimization project
+# Elementalist - Particle Rendering System
 
-Techniques:
+Elementalist is a particle rendering system optimized for efficiency and realism. It allows developers to create visually stunning particle effects in virtual worlds.
 
-- SIMD for vector and matrix operations
-- custom memory allocator using placement_new
-- proxy pattern for matrix multiplication
-- custom SSE rand() function
-- return value optimization
+## Introduction
 
-<img src="data/screenshot.PNG" width=400 height=250>
+Modern games often rely on particle systems to simulate various effects, such as smoke, fire, water, and more. ELEMentalist addresses the challenge of efficiently rendering a large number of particles in real-time while maintaining visual accuracy.
 
-Running with up to 200k particles with max life of 5 seconds and spawn frequency of 0.00005 produces an update time of ~5ms with most of the total time spent on rendering.
+## Features
 
-<img src="data/screenshot2.PNG" width=400 height=250>
+- SIMD optimization for vector and matrix operations.
+- Proxy pattern for matrix multiplication.
+- Custom memory allocator using placement_new.
+- Custom SSE rand() function for random number generation.
+- Return Value Optimization (RVO).
+
+## Requirements
+
+- Development Environment: Visual Studio.
+- Version Control System: Git.
+
+## Getting Started
+
+1. Clone the repository.
+   ```bash
+   git clone https://github.com/ritwija05/multimedia_project.git
+Open the GameParticles.sln solution file in Visual Studio.
+
+Build and run the project.
+
+
+## Acknowledgments
+Reference Research Paper - Particle Systems: A GPGPU-based approach by Tobias Grunde.
